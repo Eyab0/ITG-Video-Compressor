@@ -1,0 +1,83 @@
+ITG SOFTWARE PROPRIETARY LICENSE
+
+Copyright (c) 2025 Eyab Ghifari | ITG Software. All Rights Reserved.
+
+Developer: Eyab Ghifari
+Company: ITG Software
+
+NOTICE: This software and associated documentation files (the "Software") are 
+the proprietary and confidential property of ITG Software. The Software is 
+provided for internal use only by ITG Software employees and authorized personnel.
+
+TERMS AND CONDITIONS:
+
+1. INTERNAL USE ONLY
+   This Software is licensed for internal use within ITG Software only. 
+   You may not use this Software for any commercial purpose or for the benefit 
+   of any third party.
+
+2. NO REDISTRIBUTION
+   You may not copy, modify, distribute, sell, lease, sublicense, or otherwise 
+   transfer the Software or any portion thereof to any third party.
+
+3. NO REVERSE ENGINEERING
+   You may not reverse engineer, decompile, disassemble, or otherwise attempt 
+   to derive the source code of the Software.
+
+4. CONFIDENTIALITY
+   The Software contains proprietary information and trade secrets of ITG Software. 
+   You agree to maintain the confidentiality of the Software and not to disclose 
+   any information about the Software to any third party without the prior written 
+   consent of ITG Software.
+
+5. TERMINATION
+   This license is effective until terminated. ITG Software reserves the right to 
+   terminate this license at any time. Upon termination, you must immediately cease 
+   all use of the Software and destroy all copies of the Software in your possession.
+
+6. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+7. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL ITG SOFTWARE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+   THE SOFTWARE.
+
+THIRD-PARTY LICENSES:
+
+This Software uses the following third-party libraries:
+
+- CustomTkinter: MIT License
+  Copyright (c) 2021 Tom Schimansky
+  https://github.com/TomSchimansky/CustomTkinter
+
+- MoviePy: MIT License
+  Copyright (c) 2015 Zulko
+  https://github.com/Zulko/moviepy
+
+- Pillow (PIL): HPND License
+  Copyright (c) 1997-2011 by Secret Labs AB
+  https://github.com/python-pillow/Pillow
+
+- gdown: MIT License
+  Copyright (c) 2019 Kentaro Wada
+  https://github.com/wkentaro/gdown
+
+- colorama: BSD License
+  Copyright (c) 2010 Jonathan Hartley
+  https://github.com/tartley/colorama
+
+- pytest: MIT License
+  Copyright (c) 2004-2022 Holger Krekel and others
+  https://github.com/pytest-dev/pytest
+
+- FFmpeg: LGPL/GPL License
+  Copyright (c) 2000-2023 the FFmpeg developers
+  https://ffmpeg.org/
+
+For questions regarding this license, please contact:
+ITG Software Legal Department
+

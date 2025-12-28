@@ -1,0 +1,10 @@
+customtkinter
+ffmpeg-python
+packaging
+Pillow
+gdown
+moviepy
+colorama
+tqdm
+pytest
+pyinstaller
