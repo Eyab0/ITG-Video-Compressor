@@ -47,9 +47,11 @@ This tool is specifically designed to help the QA team:
 - [Testing](#-testing)
 - [Test Coverage](#-test-coverage)
 - [Project Structure](#-project-structure)
+- [Architecture & Design](#-architecture--design)
 - [Technical Details](#-technical-details)
 - [Troubleshooting](#-troubleshooting)
 - [Contributing](#-contributing)
+- [Changelog](#-changelog)
 
 ## ✨ Features
 
@@ -305,6 +307,10 @@ To run real video tests:
 py -m pytest tests/test_integration.py::TestRealVideoCompression -v -s
 ```
 
+## 🏗️ Architecture & Design
+
+For a deep dive into the system's modular architecture, design patterns, and data flow, please read our **[Architecture Documentation](PROJECT_ARCHITECTURE.md)**.
+
 ## 📁 Project Structure
 
 ```
@@ -353,25 +359,25 @@ vid-comp/
 ### Directory Overview
 
 - **`src/`** - Source code package
-  - `app.py` - Main GUI application using CustomTkinter
-  - `compressor.py` - Core video compression logic using MoviePy/FFmpeg
+  - `app.py` - Main Application Controller (Assembly)
+  - `compressor.py` - Core video compression logic
+  - **`ui/`** - User Interface Components
+    - `styles.py` - Theme and Color management
+    - `widgets/` - Reusable UI components (Header, FileList, etc.)
+  - **`utils/`** - Utility modules
+    - `assets.py` - Resource management
+    - `drive_importer.py` - Google Drive integration
 
-- **`tests/`** - Test suite (56 tests total)
-  - Unit tests for individual components
-  - Integration tests for full workflows
-  - Real video compression tests
+- **`tests/`** - Test suite (57 tests total)
+  - `test_compressor.py` - Logic tests
+  - `test_app.py` - Controller tests
+  - `test_integration.py` - Full workflow tests
+  - `test_refactor_structure.py` - Architecture verification
 
-- **`assets/`** - Static resources
-  - Images, icons, and other UI assets
-
-- **`build_scripts/`** - Build and packaging
-  - Scripts for creating executable with PyInstaller
-  - Build configuration files
-
-- **`docs/`** - Documentation
-  - Build instructions
-  - User guides
-  - Distribution documentation
+- **Documentation**
+  - `PROJECT_ARCHITECTURE.md` - Technical deep-dive
+  - `CONTRIBUTING.md` - Developer guidelines
+  - `CHANGELOG.md` - Version history
 
 - **Root files**
   - `main.py` - Entry point to launch the application
@@ -522,16 +528,17 @@ The application includes robust error handling:
 3. Check FFmpeg installation: `ffmpeg -version`
 4. Verify all dependencies: `pip list`
 
-## 🤝 Contributing (ITG Software Internal)
+## 🤝 Contributing
 
-This is an internal ITG Software project. Contributions are limited to ITG Software employees and authorized personnel.
+We welcome contributions! Please read our **[Contributing Guidelines](CONTRIBUTING.md)** for details on our code of conduct and the process for submitting pull requests.
 
 ### For ITG Software Developers
 
 To contribute to this project:
 
-1. Get approval from the ITG Software Development Team Lead
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+1. Read **[CONTRIBUTING.md](CONTRIBUTING.md)** carefully.
+2. Get approval from the ITG Software Development Team Lead
+3. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Add tests for your changes
 4. Ensure all tests pass (`py -m pytest tests/ -v`)
 5. Follow ITG Software coding standards
@@ -548,7 +555,11 @@ To contribute to this project:
 - Update README if adding new features
 - Ensure all tests pass before submitting PR
 
-## 📝 License & Copyright
+## � Changelog
+
+See **[CHANGELOG.md](CHANGELOG.md)** for a complete version history of the project.
+
+## �📝 License & Copyright
 
 ### ITG Software Proprietary License
 

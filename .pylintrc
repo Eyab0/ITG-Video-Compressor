@@ -1,0 +1,45 @@
+[MASTER]
+ignore=CVS
+ignore-patterns=
+persistent=yes
+load-plugins=
+jobs=1
+suggestion-mode=yes
+unsafe-load-any-extension=no
+extension-pkg-whitelist=
+
+[MESSAGES CONTROL]
+enable=c-extension-no-member
+disable=
+    C0114, # missing-module-docstring
+    C0115, # missing-class-docstring (encourage but don't force yet)
+    C0116, # missing-function-docstring
+    R0902, # too-many-instance-attributes (GUI classes often have many)
+    R0904, # too-many-public-methods
+    W0613, # unused-argument (common in GUI callbacks)
+
+[REPORTS]
+output-format=text
+files-output=no
+reports=yes
+evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
+
+[BASIC]
+good-names=i,j,k,ex,Run,_,fp,id,f,e,v,k,v
+bad-names=foo,bar,baz,toto,tutu,tata
+include-naming-hint=no
+function-styles=snake_case
+method-styles=snake_case
+attr-styles=snake_case
+argument-styles=snake_case
+variable-styles=snake_case
+
+[FORMAT]
+max-line-length=100
+ignore-long-lines=^\s*(# )?<?https?://\S+>?$
+single-line-if-stmt=no
+no-space-check=trailing-comma,dict-separator
+max-module-lines=1000
+indent-string='    '
+indent-after-paren=4
+expected-line-ending-format=

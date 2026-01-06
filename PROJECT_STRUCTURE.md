@@ -16,8 +16,22 @@ vid-comp/
 │
 ├── 📁 src/                       # Source code package
 │   ├── __init__.py
-│   ├── app.py                    # Main application GUI
-│   └── compressor.py             # VideoCompressor class
+│   ├── app.py                    # Main application GUI (Assembly)
+│   ├── compressor.py             # Video compression logic
+│   ├── ui/                       # UI Components
+│   │   ├── __init__.py
+│   │   ├── styles.py             # Theme/Colors
+│   │   └── widgets/              # Reusable widgets
+│   │       ├── __init__.py
+│   │       ├── action_bar.py
+│   │       ├── file_list.py
+│   │       ├── header.py
+│   │       ├── settings.py
+│   │       └── status_panel.py
+│   └── utils/                    # Utilities
+│       ├── __init__.py
+│       ├── assets.py             # Asset management
+│       └── drive_importer.py     # Google Drive logic
 │
 ├── 📁 tests/                     # Test suite (56 tests)
 │   ├── __init__.py
