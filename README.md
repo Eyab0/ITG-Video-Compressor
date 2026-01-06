@@ -19,6 +19,8 @@ A modern, professional video compression application built with Python and Custo
 
 **ITG Video Compressor** is an internal tool developed by **Eyab Ghifari** for **ITG Software** and designed specifically for use by our Quality Assurance (QA) team. This application streamlines the video compression workflow, allowing QA team members to quickly prepare test videos for sharing, reporting, and documentation purposes.
 
+<img width="1220" height="1137" alt="ITG_vid_comp" src="https://github.com/user-attachments/assets/26c684e5-9fa0-4646-8f8d-9a7ea4cafd01" />
+
 ### Developer
 
 **Developed by:** Eyab Ghifari  
